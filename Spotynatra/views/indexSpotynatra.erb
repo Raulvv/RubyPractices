@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spotynatra</title>
+</head>
+<body>
+	<form method="POST" action="songs/new">
+		Title: <input type="text" name="title">
+		Author: <input type="text" name="author">
+		<input type="submit">
+	</form>
+	<ul>
+		<% @list.each do |song| %>
+			<li>Titulo: <%= song[0] %> Autor: <%= song [1] %></li>
+		<% end %>
+	</ul>
+</body>
+</html>
